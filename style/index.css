@@ -10,7 +10,7 @@
   font-size: 1rem;
 }
 
-.btn-primary{
+.btn-primary {
   border-radius: 8px;
   background: #ff900e;
   padding: 20px 24px;
@@ -53,6 +53,16 @@ nav li {
 nav li a {
   text-decoration: none;
   color: #424242;
+}
+
+
+.text-light-gray{
+    color: #727272;
+text-align: center;
+
+font-size: 1rem;
+font-weight: 400;
+
 }
 
 /* banner styles start from here */
@@ -136,7 +146,7 @@ main {
 
   .team-img-container {
     /* display: grid; */
-  grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     margin: 0 auto;
   }
 }
