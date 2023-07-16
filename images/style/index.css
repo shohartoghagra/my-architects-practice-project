@@ -1,12 +1,16 @@
 /* Work Sans font family from Google font */
 
-
+/* shared styles */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap');
 
 *{
     font-family: 'Work Sans', sans-serif;
 }
 
+.text-light-gray{
+    color: #727272;
+    font-size: 1rem;
+}
 
 .bnt-primary{
     border-radius: 8px;
@@ -64,51 +68,17 @@ nav li a{
     font-weight: 700;
 }
 
-.banner-description{
-    color: #727272;
-    font-size: 1rem;
-}
 .banner img{
     width: 100%;
     margin-top: 20px;
 }
-
-
-/* Responsive media query */
-
-/* Mobile devices */
-@media screen and (max-with:576px) {
+  /* main section style*/
+  
+  main{
+    max-width: 1440px;
+    margin: 70px auto;
     
-  header{
-    padding: 20px;
-} 
-
-nav{
-    flex-direction: column;
-}
-
-}
-
-/* Table and Medium devices */
-@media screen and (min-width:576px)  and (max-width:960px){
-    header{
-        padding: 40px;
     }
-
-nav{
-    flex-direction: column;
-}
-}
-
-
-
-/* main section style*/
-
-main{
-max-width: 1440px;
-margin: 0 auto;
-
-}
 
 /* Teams and feature section start from here */
 
@@ -149,3 +119,47 @@ font-size: 45px;
 font-weight: 700;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive media query */
+
+/* Mobile devices */
+@media screen and (max-with:576px) {
+    
+    header{
+      padding: 20px;
+  } 
+  
+  nav,
+  .teams-container{
+      flex-direction: column;
+  }
+  .team-img-container{
+   grid-template-columns: 1fr;
+
+  }
+  }
+  
+  /* Table and Medium devices */
+
+  @media screen and (min-width:576px) and (max-width:960px){
+      header{
+          padding: 40px;
+      }
+  
+  nav{
+      flex-direction: column;
+  }
+  }
+  
+  
+  
